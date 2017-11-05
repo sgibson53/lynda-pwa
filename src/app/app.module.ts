@@ -10,7 +10,7 @@ import { GeolocationService } from './geolocation.service';
 import { DataService } from './data.service';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule, MatIconModule, MatInputModule, MatSelectModule, MatSliderModule, MatToolbarModule, MatCardModule, MatSlideToggleModule } from '@angular/material';
+import { MatButtonModule, MatIconModule, MatInputModule, MatSelectModule, MatSliderModule, MatToolbarModule, MatCardModule, MatSlideToggleModule, MatSnackBarModule } from '@angular/material';
 
 import 'hammerjs';
 import { ListComponent } from './list/list.component';
@@ -29,7 +29,7 @@ const routes: Routes = [
     CoffeeComponent
   ],
   imports: [
-    BrowserModule, BrowserAnimationsModule, MatButtonModule, MatIconModule, MatInputModule, MatSelectModule, MatSliderModule, MatToolbarModule, MatCardModule, MatSlideToggleModule, RouterModule.forRoot(routes), FormsModule, HttpModule
+    BrowserModule, BrowserAnimationsModule, MatButtonModule, MatIconModule, MatInputModule, MatSelectModule, MatSliderModule, MatToolbarModule, MatCardModule, MatSlideToggleModule, RouterModule.forRoot(routes), FormsModule, HttpModule, MatSnackBarModule
   ],
   providers: [GeolocationService, DataService],
   bootstrap: [AppComponent]
